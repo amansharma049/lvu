@@ -1,0 +1,39 @@
+body {
+  text-align: center;
+  background-image: url(08-1.jpg);
+  background-repeat: no-repeat;
+ background-size: cover;
+}
+.first_name{
+
+}
+.second_name{
+
+}
+.contain{
+padding-top: 130px;
+}
+.result{
+  background-image: url(08.png);
+  background-size: cover;
+  width: 30%;
+  height: 150px;
+  margin: 50px auto 100px auto;
+
+}
+.reslt{
+  padding: 12.5%;
+
+  font-family: monospace;
+  font-weight: bolder;
+  font-size: larger;
+  line-height: 1.5;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+}
+.btn{
+  text-align: left;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="08.css">
+</head>
+
+<body>
+  <form id="frm1" action="/action_page.php">
+    <div class="contain">
+      <div class="first_name">
+        Enter Your Name: <br> <input type="text" name="fname"><br>
+      </div>
+      <div class="second_name">
+        Enter Your Parter Name: <br><input type="text" name="lname"><br><br>
+      </div>
+      <input class="btn" type="button" onclick="myFunction()" value="Submit">
+      <input type="button" onclick="myFunction1()" value="Reset">
+
+
+    </div>
+    <div class="result">
+      <p class="reslt" id="as"></p>
+    </div>
+  </form>
+
+
+
+  <script>
+    function myFunction() {
+      var lovescore = Math.random() * 100;
+      lovescore = Math.floor(lovescore) + 1;
+      if (lovescore > 70) {
+        /*alert*/
+        document.getElementById('as').innerHTML = ("Your love score is " + lovescore + ". (You love each other like Romio Julit)");
+      }
+      if (lovescore > 30 && lovescore <= 70) {
+        /*alert*/
+        document.getElementById('as').innerHTML = ("Your love score is " + lovescore);
+      }
+      if (lovescore <= 30) {
+        /*alert*/
+        document.getElementById('as').innerHTML = ("Your love score is " + lovescore + ". (you go together like oil and water)");
+      }
+    }
+  </script>
+  <script>
+    function myFunction1() {
+      document.getElementById("as").reset();
+    }
+  </script>
+
+
+
+  <!-- <h1>Enter Your Name.</h1>
+<input type="text" id="1st_name" name="" value="">
+
+<h1>Enter Your Parter Name.</h1>
+<input type="text" id="2nd_name" name="" value="">
+
+<script src="04.js" charset="utf-8"></script>
+<p id="result">😁</p> -->
+</body>
+
+</html>
